@@ -1,13 +1,48 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  font-family: 'ST', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+@font-face {
+  font-family: ST;
+  font-weight: 800;
+  src: url(./theme/fonts/Gilroy-Heavy.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ST;
+  font-weight: 700;
+  src: url(./theme/fonts/Gilroy-Bold.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ST;
+  font-weight: 500;
+  src: url(./theme/fonts/Gilroy-Medium.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ST;
+  font-weight: normal;
+  src: url(./theme/fonts/Gilroy-Regular.woff);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ST;
+  font-weight: 300;
+  src: url(./theme/fonts/Gilroy-Light.woff);
+  font-display: swap;
 }
