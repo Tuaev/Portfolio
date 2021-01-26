@@ -1,13 +1,13 @@
 const typography = {
   fontFamily: ['ST'],
   h1: {
-    fontWeight: 500,
+    fontWeight: 700,
     // fontSize: 35,
     // letterSpacing: '-0.24px',
   },
   h2: {
-    fontWeight: 500,
-    // fontSize: 29,
+    fontWeight: 700,
+    fontSize: 90,
     // letterSpacing: '-0.24px',
   },
   h3: {
@@ -22,7 +22,7 @@ const typography = {
   },
   h5: {
     fontWeight: 500,
-    // fontSize: 16,
+    fontSize: 28,
     // letterSpacing: '-0.05px',
   },
   h6: {

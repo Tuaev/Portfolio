@@ -113,8 +113,8 @@ function TopNavBar() {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
-            href="#home"
+            offset="185"
+            href="#about"
           >
             ABOUT
           </Link>
