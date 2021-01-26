@@ -35,7 +35,7 @@ code {
 
 @font-face {
   font-family: ST;
-  font-weight: normal;
+  font-weight: 400;
   src: url(./theme/fonts/Gilroy-Regular.woff);
   font-display: swap;
 }

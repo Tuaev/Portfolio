@@ -1,42 +1,58 @@
-import { Box, Container, Typography } from '@material-ui/core';
+import { Box, Container, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 
+const useStyles = makeStyles(() => ({
+  root: {
+    height: '100vh',
+  },
+  feature: {
+    height: '85%',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  shape: {
+    // position: 'absolute',
+    top: 0,
+    left: 0,
+    '& > img': {
+      maxWidth: '90%',
+      height: 'auto',
+    },
+  },
+}));
+
 function Home() {
+  const classes = useStyles();
+
   return (
-    <div style={{ height: '100vh' }} id="home">
-      <Container maxWidth="lg">
-        <br />
-        Just some random Text
-        <br />
-        <br />
-        <Typography variant="h1" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="h2" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="h3" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="h4" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="h5" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="h6" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="subtitle1" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="subtitle2" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-        <Typography variant="body1" color="textPrimary">
-          Product designer and Developer, based in Dublin
-        </Typography>
-      </Container>
+    <div className={classes.root} id="home">
+      <Grid container spacing={3} className={classes.feature}>
+        <Grid item xs={12} md={6}>
+          <Typography variant="h1" color="textSecondary">
+            <b>Soslan Tuaev</b>
+          </Typography>
+          <Box mt="1rem">
+            <Typography variant="h5" color="textPrimary">
+              I'm a Computer Science graduate and JavaScript Developer based in Dublin who
+              is actively seeking{' '}
+              <i>
+                <strong>New Opportunities </strong>
+              </i>
+              for Software Developer roles.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box position="relative">
+            <div className={classes.shape}>
+              <img alt="Shapes" src="/static/home/shapes.svg" />
+            </div>
+            {/* <div className={classes.image}>
+                <img alt="Presentation" src="/static/home/categories-dashboard.jpg" />
+              </div> */}
+          </Box>
+        </Grid>
+      </Grid>
     </div>
   );
 }

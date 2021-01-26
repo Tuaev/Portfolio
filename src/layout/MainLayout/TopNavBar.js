@@ -10,19 +10,24 @@ import {
   Link,
   makeStyles,
   Container,
+  IconButton,
 } from '@material-ui/core';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
   },
-
   toolbar: {
     height: 64,
+    display: 'flex',
+    alignItems: 'center',
   },
   logo: {
     marginRight: theme.spacing(2),
+    fontWeight: 'bold',
   },
   link: {
     fontSize: 20,
@@ -34,10 +39,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   divider: {
-    width: 1,
-    height: 32,
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
+    width: 2,
+    height: 45,
+    // marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    backgroundColor: '#d4d4d4',
+  },
+  icon: {
+    fontSize: 34,
+    color: theme.palette.text.primary,
   },
 }));
 
@@ -50,7 +60,7 @@ function TopNavBar() {
         <Toolbar className={classes.toolbar}>
           <Link
             component={AnchorLink}
-            className={classes.link}
+            className={classes.logo}
             color="textSecondary"
             underline="none"
             offset="64"
@@ -58,6 +68,33 @@ function TopNavBar() {
             style={{ fontSize: '44px' }}
           >
             ST
+          </Link>
+          <Divider className={classes.divider} />
+
+          <Link
+            href={'https://github.com/Tuaev'}
+            target="_blank"
+            rel="noopener noreferrer"
+            component={IconButton}
+            aria-label="GitHub"
+            className={classes.icon}
+            disableRipple
+            disableFocusRipple
+          >
+            <FaGithubSquare />
+          </Link>
+
+          <Link
+            href={'https://github.com/Tuaev'}
+            target="_blank"
+            rel="noopener noreferrer"
+            component={IconButton}
+            aria-label="GitHub"
+            className={classes.icon}
+            disableRipple
+            disableFocusRipple
+          >
+            <FaLinkedin />
           </Link>
 
           <Box flexGrow={1} />

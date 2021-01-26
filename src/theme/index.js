@@ -6,21 +6,12 @@ import typography from './typography';
 const baseOptions = {
   typography,
   breakpoints: {
-    keys: {
-      0: 'xs',
-      1: 'sm',
-      2: 'md',
-      3: 'lg',
-      4: 'xl',
-      5: 'full',
-    },
     values: {
       xs: 0,
       sm: 600,
       md: 960,
       lg: 1280,
       xl: 1500,
-      full: window.innerWidth,
     },
   },
   overrides: {
@@ -107,7 +98,7 @@ const themesOptions = [
         secondary: '#adb0bb',
       },
     },
-    shadows: softShadows,
+    shadows: strongShadows,
   },
 ];
 
