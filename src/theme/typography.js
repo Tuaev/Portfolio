@@ -26,8 +26,9 @@ const typography = {
     // letterSpacing: '-0.05px',
   },
   h6: {
-    fontWeight: 500,
-    // fontSize: 14,
+    fontWeight: 400,
+    fontSize: 18,
+    lineHeight: 1.2,
     // letterSpacing: '-0.05px',
   },
   overline: {

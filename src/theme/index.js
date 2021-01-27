@@ -61,7 +61,7 @@ const themesOptions = [
         main: '#8a85ff',
       },
       secondary: {
-        main: '#5850EC',
+        main: '#FF5800',
       },
       text: {
         primary: '#2e2e2e',

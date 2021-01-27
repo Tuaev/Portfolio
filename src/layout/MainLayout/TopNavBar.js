@@ -13,8 +13,6 @@ import {
   IconButton,
 } from '@material-ui/core';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -123,8 +121,8 @@ function TopNavBar() {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
-            href="#home"
+            offset="185"
+            href="#work"
           >
             WORK
           </Link>
@@ -133,8 +131,8 @@ function TopNavBar() {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
-            href="#home"
+            offset="185"
+            href="#contact"
           >
             CONTACT
           </Link>

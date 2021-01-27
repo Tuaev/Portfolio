@@ -1,8 +1,14 @@
-import { Box, Grid, makeStyles, Typography } from '@material-ui/core';
+import { Box, Container, Grid, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(6),
+  },
+  image: {
+    maxWidth: 78,
+  },
+  centerImage: {
+    textAlign: 'center',
   },
 }));
 
@@ -31,26 +37,58 @@ function About() {
           Express with a recent interest in TypeScript.
         </Typography>
       </Box>
-      <Grid container spacing={3}>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/javascript-original.svg" />
+      <Container maxWidth="lg">
+        <Grid
+          container
+          spacing={3}
+          direction="row"
+          justify="center"
+          className={classes.centerImage}
+        >
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/javascript-original.svg"
+              alt="javascript"
+              className={classes.image}
+            />
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/react-original.svg"
+              alt="react"
+              className={classes.image}
+            />
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/nodejs-original.svg"
+              alt="nodejs"
+              className={classes.image}
+            />
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/mongodb-original.svg"
+              alt="mongodb"
+              className={classes.image}
+            />
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/html5-original.svg"
+              alt="html5"
+              className={classes.image}
+            />
+          </Grid>
+          <Grid item xs={4} md={2}>
+            <img
+              src="/static/skills/css3-original.svg"
+              alt="css3"
+              className={classes.image}
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/react-original.svg" />
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/nodejs-original.svg" />
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/mongodb-original.svg" />
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/html5-original.svg" />
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <img src="/static/skills/css3-original.svg" />
-        </Grid>
-      </Grid>
+      </Container>
     </div>
   );
 }
