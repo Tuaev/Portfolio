@@ -11,6 +11,8 @@ import {
 } from '@material-ui/core';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { MdPictureAsPdf } from 'react-icons/md';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
@@ -90,6 +92,18 @@ function TopNavBar() {
             disableFocusRipple
           >
             <FaLinkedin />
+          </Link>
+          <Link
+            href={'/pdf/my-cv.pdf'}
+            target="_blank"
+            rel="noopener noreferrer"
+            component={IconButton}
+            aria-label="GitHub"
+            className={classes.icon}
+            disableRipple
+            disableFocusRipple
+          >
+            <MdPictureAsPdf />
           </Link>
 
           <Box flexGrow={1} />
