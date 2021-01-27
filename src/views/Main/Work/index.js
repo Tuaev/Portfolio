@@ -38,7 +38,7 @@ const workProject = [
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(18),
-    height: '100vh',
+    // height: '100vh',
   },
 }));
 

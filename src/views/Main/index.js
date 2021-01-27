@@ -3,6 +3,7 @@ import About from './About';
 import Work from './Work';
 import Home from './Home';
 import { Container, makeStyles } from '@material-ui/core';
+import Contact from './Contact';
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
@@ -24,6 +25,7 @@ function Main() {
           <Home />
           <About />
           <Work />
+          <Contact />
         </Container>
       </main>
     </>
