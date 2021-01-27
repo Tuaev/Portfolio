@@ -2,11 +2,8 @@ import React from 'react';
 import {
   AppBar,
   Box,
-  Button,
   Divider,
   Toolbar,
-  Hidden,
-  Typography,
   Link,
   makeStyles,
   Container,
