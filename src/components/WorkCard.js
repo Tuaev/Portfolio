@@ -78,7 +78,7 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
   },
   chip: {
     borderRadius: spacing(0.3),
-    background: '#f83600',
+    background: palette.secondary.main,
     padding: '5px 15px',
     paddingTop: spacing(0.5),
     paddingBottom: spacing(0.5),
