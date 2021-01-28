@@ -25,8 +25,10 @@ function ContactForm() {
       onSubmit="submit"
     >
       <Grid container spacing={3}>
+        <input type="hidden" name="form-name" value="contact" />
         <Grid item sm={12} md={6}>
           <TextField
+            type="text"
             name="fullName"
             variant="outlined"
             fullWidth
@@ -37,6 +39,7 @@ function ContactForm() {
         </Grid>
         <Grid item sm={12} md={6}>
           <TextField
+            type="email"
             name="email"
             variant="outlined"
             fullWidth
@@ -47,6 +50,7 @@ function ContactForm() {
         </Grid>
         <Grid item sm={12}>
           <TextField
+            type="text"
             name="message"
             variant="outlined"
             fullWidth
