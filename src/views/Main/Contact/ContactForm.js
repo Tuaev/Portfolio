@@ -51,7 +51,7 @@ function ContactForm() {
     >
       <Grid container spacing={3}>
         <input type="hidden" name="form-name" value="contact" />
-        <Grid item sm={12} md={6}>
+        <Grid item xs={12} md={6}>
           <TextField
             required
             type="text"
@@ -64,7 +64,7 @@ function ContactForm() {
             onChange={(e) => setFullName(e.target.value)}
           />
         </Grid>
-        <Grid item sm={12} md={6}>
+        <Grid item xs={12} md={6}>
           <TextField
             required
             type="email"
@@ -77,7 +77,7 @@ function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </Grid>
-        <Grid item sm={12}>
+        <Grid item xs={12}>
           <TextField
             required
             type="text"
@@ -95,7 +95,7 @@ function ContactForm() {
         <div hidden>
           <input name="bot-field" />
         </div>
-        <Grid item sm={12} className={classes.alignRight}>
+        <Grid item xs={12} className={classes.alignRight}>
           <Button
             type="submit"
             variant="contained"
