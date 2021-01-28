@@ -1,7 +1,5 @@
 import { Button, Grid, makeStyles, TextField } from '@material-ui/core';
-import React, { useState } from 'react';
-import SendIcon from '@material-ui/icons/Send';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+// import React, { useState } from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
 const useStyles = makeStyles((theme) => ({
   alignRight: {
@@ -14,9 +12,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 function ContactForm() {
   const classes = useStyles();
-  const [email, setEmail] = useState();
-  const [fullName, setFullName] = useState();
-  const [message, setMessage] = useState();
+  // const [email, setEmail] = useState();
+  // const [fullName, setFullName] = useState();
+  // const [message, setMessage] = useState();
 
   return (
     <form
@@ -34,7 +32,7 @@ function ContactForm() {
             fullWidth
             color="secondary"
             label="Full Name"
-            onChange={(e) => setFullName(e.target.value)}
+            // onChange={(e) => setFullName(e.target.value)}
           />
         </Grid>
         <Grid item sm={12} md={6}>
@@ -44,7 +42,7 @@ function ContactForm() {
             fullWidth
             color="secondary"
             label="Email"
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
           />
         </Grid>
         <Grid item sm={12}>
@@ -56,7 +54,7 @@ function ContactForm() {
             multiline
             rows={8}
             label="Message"
-            onChange={(e) => setMessage(e.target.value)}
+            // onChange={(e) => setMessage(e.target.value)}
           />
         </Grid>
         <div hidden>
