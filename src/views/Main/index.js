@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About';
 import Work from './Work';
 import Home from './Home';
+import Footer from './Footer';
 import { Container, makeStyles } from '@material-ui/core';
 import Contact from './Contact';
 
@@ -26,6 +27,7 @@ function Main() {
           <About />
           <Work />
           <Contact />
+          <Footer />
         </Container>
       </main>
     </>

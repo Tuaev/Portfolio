@@ -66,6 +66,7 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
   },
   button: {
     textTransform: 'none',
+    textDecoration: 'none !important',
   },
   chipBox: {
     zIndex: '2',
@@ -140,13 +141,13 @@ function WorkCard({ project }) {
       <CardActions className={classes.cardActions}>
         <Button
           component={Link}
-          className={classes.button}
           endIcon={<LaunchIcon />}
           variant="outlined"
           color="secondary"
           href={project.website}
           target="_blank"
           rel="noopener noreferrer"
+          className={classes.button}
         >
           {project.button}
         </Button>

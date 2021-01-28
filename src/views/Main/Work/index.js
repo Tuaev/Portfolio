@@ -51,7 +51,7 @@ function Work() {
         Work
       </Typography>
       <Box mt="6rem">
-        <Grid container spacing={3}>
+        <Grid container spacing={3} justify="center" alignItems="center">
           {workProject.map((project) => (
             <Grid item xs={12} md={6} lg={4} key={project.id}>
               <WorkCard project={project} />

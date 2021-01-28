@@ -3,7 +3,7 @@ import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: '100vh',
+    height: '90vh',
     [theme.breakpoints.down('md')]: {
       paddingTop: 60,
     },

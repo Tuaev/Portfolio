@@ -18,8 +18,10 @@ const baseOptions = {
     MuiOutlinedInput: {
       root: {
         fontSize: '1.2em',
+        backgroundColor: '#f0f0f0',
       },
     },
+
     MuiInputLabel: {
       root: {
         fontSize: '1.2em',
