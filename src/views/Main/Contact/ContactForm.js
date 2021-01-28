@@ -27,12 +27,17 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('/', {
+    fetch('/form', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...{ fullName, email, message } }),
+      body: encode({ 'form-name': 'contact', fullName, email, message }),
     })
-      .then(() => alert('Success!'))
+      .then(() => {
+        alert('Success!');
+        setEmail('');
+        setFullName('');
+        setMessage('');
+      })
       .catch((error) => alert(error));
   };
 
@@ -51,6 +56,7 @@ function ContactForm() {
             required
             type="text"
             name="fullName"
+            value={fullName}
             variant="outlined"
             fullWidth
             color="secondary"
@@ -63,6 +69,7 @@ function ContactForm() {
             required
             type="email"
             name="email"
+            value={email}
             variant="outlined"
             fullWidth
             color="secondary"
@@ -75,6 +82,7 @@ function ContactForm() {
             required
             type="text"
             name="message"
+            value={message}
             variant="outlined"
             fullWidth
             color="secondary"
