@@ -1,6 +1,7 @@
 import { Button, Grid, makeStyles, TextField } from '@material-ui/core';
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
+
 const useStyles = makeStyles((theme) => ({
   alignRight: {
     textAlign: 'right',
@@ -10,11 +11,30 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
   },
 }));
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 function ContactForm() {
   const classes = useStyles();
-  // const [email, setEmail] = useState();
-  // const [fullName, setFullName] = useState();
-  // const [message, setMessage] = useState();
+  const [email, setEmail] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...{ fullName, email, message } }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+  };
 
   return (
     <form
@@ -22,34 +42,37 @@ function ContactForm() {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      onSubmit="submit"
+      onSubmit={handleSubmit}
     >
       <Grid container spacing={3}>
         <input type="hidden" name="form-name" value="contact" />
         <Grid item sm={12} md={6}>
           <TextField
+            required
             type="text"
             name="fullName"
             variant="outlined"
             fullWidth
             color="secondary"
             label="Full Name"
-            // onChange={(e) => setFullName(e.target.value)}
+            onChange={(e) => setFullName(e.target.value)}
           />
         </Grid>
         <Grid item sm={12} md={6}>
           <TextField
+            required
             type="email"
             name="email"
             variant="outlined"
             fullWidth
             color="secondary"
             label="Email"
-            // onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </Grid>
         <Grid item sm={12}>
           <TextField
+            required
             type="text"
             name="message"
             variant="outlined"
@@ -58,7 +81,7 @@ function ContactForm() {
             multiline
             rows={8}
             label="Message"
-            // onChange={(e) => setMessage(e.target.value)}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </Grid>
         <div hidden>
