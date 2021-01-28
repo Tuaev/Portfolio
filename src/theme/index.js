@@ -15,6 +15,19 @@ const baseOptions = {
     },
   },
   overrides: {
+    MuiOutlinedInput: {
+      root: {
+        fontSize: '1.2em',
+      },
+    },
+    MuiInputLabel: {
+      root: {
+        fontSize: '1.2em',
+      },
+      outlined: {
+        transform: 'translate(14px, 19px) scale(1)',
+      },
+    },
     MuiLinearProgress: {
       root: {
         borderRadius: 3,
