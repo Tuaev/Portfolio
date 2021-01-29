@@ -10,6 +10,11 @@ const useStyles = makeStyles((theme) => ({
   centerImage: {
     textAlign: 'center',
   },
+  mobileFont: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 17,
+    },
+  },
 }));
 
 function About() {
@@ -20,15 +25,12 @@ function About() {
         About Me
       </Typography>
       <Box my="3rem">
-        {/* <Typography variant="h5" component="p" color="textPrimary">
-          I graduated with a Computer Science Bachlor's degree 👨‍💻 from the Dublin
-          Institute of Technology in 2016. Since then I've done freelance web development
-          work and ran a non-software related company for 4 years. In my free time I enjoy
-          designing and creating real world Single Page Applications as side projects.
-          Some technologies that I enjoy working with are React.js, MongoDB, Node.js and
-          Express with a recent interest in TypeScript.
-        </Typography> */}
-        <Typography variant="h5" component="p" color="textPrimary">
+        <Typography
+          variant="h5"
+          component="p"
+          color="textPrimary"
+          className={classes.mobileFont}
+        >
           Graduated with a Computer Science Bachlor's degree from the Dublin Institute of
           Technology in 2016. Worked as a freelance web development in my off time and ran
           a non-software related company for 4 years. In my free time I enjoy designing

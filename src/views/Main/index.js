@@ -10,9 +10,13 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
     paddingLeft: spacing(6),
     paddingRight: spacing(6),
-    [breakpoints.down('sm')]: {
-      paddingLeft: spacing(2.5),
-      paddingRight: spacing(2.5),
+    [breakpoints.down('md')]: {
+      paddingLeft: spacing(12),
+      paddingRight: spacing(12),
+    },
+    [breakpoints.down('xs')]: {
+      paddingLeft: spacing(3.5),
+      paddingRight: spacing(3.5),
     },
   },
 }));

@@ -21,6 +21,14 @@ import DrawerContent from './DrawerContent';
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
+    [theme.breakpoints.only('md')]: {
+      paddingLeft: theme.spacing(6),
+      paddingRight: theme.spacing(6),
+    },
+    // [theme.breakpoints.down('xs')]: {
+    //   paddingLeft: theme.spacing(2.5),
+    //   paddingRight: theme.spacing(2.5),
+    // },
   },
   toolbar: {
     height: 64,

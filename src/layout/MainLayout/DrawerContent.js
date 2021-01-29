@@ -1,4 +1,4 @@
-import { Box, Divider, Link, List, ListItem, makeStyles } from '@material-ui/core';
+import { Box, Link, List, ListItem, makeStyles } from '@material-ui/core';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
