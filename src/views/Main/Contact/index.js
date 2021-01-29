@@ -11,13 +11,13 @@ import {
 import React from 'react';
 import ContactForm from './ContactForm';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import SaveIcon from '@material-ui/icons/Save';
+import { MdPictureAsPdf } from 'react-icons/md';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { useTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
-    marginTop: spacing(12),
+    marginTop: spacing(8),
   },
   paper: {
     zIndex: '1',
@@ -72,7 +72,6 @@ function Contact() {
   const classes = useStyles();
   const theme = useTheme();
   const smUp = useMediaQuery(theme.breakpoints.up('md'));
-  console.log(smUp);
   return (
     <div className={classes.root} id="contact">
       <Typography variant="h1" component="h2" align="center" color="textSecondary">
@@ -120,7 +119,7 @@ function Contact() {
                 className={classes.button}
                 startIcon={
                   <>
-                    <SaveIcon style={{ fontSize: 30, marginRight: 12 }} />
+                    <MdPictureAsPdf style={{ fontSize: 30, marginRight: 12 }} />
                     <Divider className={classes.divider} />
                   </>
                 }

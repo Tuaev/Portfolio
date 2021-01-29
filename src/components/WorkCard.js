@@ -23,7 +23,7 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     flexDirection: 'column',
     // alignItems: 'center',
     paddingBottom: spacing(2),
-    marginBottom: spacing(5),
+    marginBottom: spacing(8),
   },
   media: {
     zIndex: '1',
