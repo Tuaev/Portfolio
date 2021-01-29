@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from '@material-ui/core';
+import { Box, Link } from '@material-ui/core';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -12,9 +12,7 @@ function Footer() {
         offset="185"
         href="#home"
       >
-        <Typography variant="h4" color="textSecondary" component="footer">
-          Soslan Tuaev
-        </Typography>
+        <img alt="logo" src="/static/logo.svg" style={{ height: '88px' }} />
       </Link>
     </Box>
   );

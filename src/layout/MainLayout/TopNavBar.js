@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   logo: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1.5),
     fontWeight: 'bold',
   },
   link: {
@@ -83,7 +83,11 @@ function TopNavBar() {
             href="#home"
             style={{ fontSize: '44px' }}
           >
-            ST
+            <img
+              alt="logo"
+              src="/static/logo.svg"
+              style={{ height: '54px', marginTop: '14px' }}
+            />
           </Link>
           <Divider className={classes.divider} />
 
