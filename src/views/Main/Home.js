@@ -72,6 +72,7 @@ function Home() {
               color="secondary"
               startIcon={<FiArrowDownCircle />}
               href={'#work'}
+              offset="185"
             >
               View My Work
             </Button>

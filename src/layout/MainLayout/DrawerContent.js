@@ -36,7 +36,7 @@ function DrawerContent({ setOpenMobileNav }) {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
+            offset="100"
             href="#about"
             onClick={() => setOpenMobileNav(false)}
           >
@@ -49,7 +49,7 @@ function DrawerContent({ setOpenMobileNav }) {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
+            offset="100"
             href="#work"
             onClick={() => setOpenMobileNav(false)}
           >
@@ -62,7 +62,7 @@ function DrawerContent({ setOpenMobileNav }) {
             className={classes.link}
             color="textPrimary"
             underline="none"
-            offset="64"
+            offset="100"
             href="#contact"
             onClick={() => setOpenMobileNav(false)}
           >
