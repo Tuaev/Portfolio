@@ -98,7 +98,7 @@ function Contact() {
               </Button>
               <Button
                 component={Link}
-                href="mailto:soslan@tuaev.com"
+                href="https://www.linkedin.com/in/tuaev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.button}
@@ -113,7 +113,7 @@ function Contact() {
               </Button>
               <Button
                 component={Link}
-                href="mailto:soslan@tuaev.com"
+                href="/pdf/Soslan-Tuaev-CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.button}

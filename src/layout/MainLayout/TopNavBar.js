@@ -105,11 +105,11 @@ function TopNavBar() {
           </Link>
 
           <Link
-            href={'https://github.com/Tuaev'}
+            href={'https://www.linkedin.com/in/tuaev/'}
             target="_blank"
             rel="noopener noreferrer"
             component={IconButton}
-            aria-label="GitHub"
+            aria-label="LinkedIn"
             className={classes.icon}
             disableRipple
             disableFocusRipple
@@ -117,11 +117,11 @@ function TopNavBar() {
             <FaLinkedin />
           </Link>
           <Link
-            href={'/pdf/my-cv.pdf'}
+            href={'/pdf/Soslan-Tuaev-CV.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             component={IconButton}
-            aria-label="GitHub"
+            aria-label="CV"
             className={classes.icon}
             disableRipple
             disableFocusRipple
