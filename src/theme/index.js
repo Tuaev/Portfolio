@@ -77,10 +77,12 @@ const themesOptions = [
       },
       secondary: {
         main: '#FF5800',
+        // main: '#3cb9ac',
       },
       text: {
         primary: '#2e2e2e',
         secondary: '#FF5800',
+        // secondary: '#3cb9ac',
       },
     },
     shadows: softShadows,
