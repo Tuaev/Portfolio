@@ -135,12 +135,3 @@ export const createTheme = (config = {}) => {
 
   return theme;
 };
-
-function getDevJob(studying, hardWork, luck) {
-  const isPrepared = studying && hardWork && luck;
-  if (isPrepared) {
-    return true;
-  } else {
-    return false;
-  }
-}
