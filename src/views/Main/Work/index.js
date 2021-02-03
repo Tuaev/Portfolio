@@ -7,7 +7,7 @@ const workProject = [
     id: '1',
     title: 'Tournament Manager',
     description:
-      'A combat sport event and tournament management system. Wresmnr allows you to create and manage events easily with prebuilt Olympic Wrestling brackets.',
+      'A combat sports event and tournament management system. Wresmnr allows you to create and manage events easily with prebuilt Olympic Wrestling brackets.',
     tags: ['Full-Stack', 'React.js', 'Node.js'],
     website: 'https://wresmnr.netlify.app/',
     image: '/static/work/wresmnr-home-min.png',
@@ -17,7 +17,7 @@ const workProject = [
     id: '2',
     title: 'Wrestling Ireland',
     description:
-      'The offial website of the Irish Amateur Wrestling Association. A Full-Stack application to manage membership, tournaments and events with secure payments.',
+      'The official website of the Irish Amateur Wrestling Association. A Full-Stack application to manage membership, tournaments and events with secure payments.',
     tags: ['Node.js', 'MongoDB', 'Express'],
     website: 'https://www.irishwrestling.ie/',
     image: '/static/work/wrestling-admin-min.png',

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   mobileFont: {
+    textAlign: 'justify',
     [theme.breakpoints.down('sm')]: {
       fontSize: 17,
     },
@@ -31,12 +32,12 @@ function About() {
           color="textPrimary"
           className={classes.mobileFont}
         >
-          Graduated with a Computer Science Bachlor's degree from the Dublin Institute of
-          Technology in 2016. Worked as a freelance web development in my off time and ran
-          a non-software related company for 4 years. In my free time I enjoy designing
-          and creating real world Single Page Applications as side projects. Some
-          technologies that I enjoy working with are React.js, MongoDB, Node.js and
-          Express with a recent interest in TypeScript.
+          Graduated with a Computer Science Bachelor's degree from the Dublin Institute of
+          Technology in 2016. I'm an avid learner that ran a non-software related company
+          for 4 years and worked as a freelance web developer in my off time. In my free
+          time, I enjoy designing and creating real-world Single Page Applications as side
+          projects. Some technologies that I enjoy working with are React.js, MongoDB,
+          Node.js and Express with a recent interest in TypeScript.
         </Typography>
       </Box>
       <Container maxWidth="lg">
