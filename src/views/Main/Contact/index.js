@@ -34,10 +34,10 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     zIndex: '2',
     marginTop: '-90px',
     marginBottom: '30px',
-    // marginLeft: spacing(2),
-    [breakpoints.down('md')]: {
-      // fontSize: 14,
-      marginLeft: spacing(5),
+    [breakpoints.down('sm')]: {
+      marginTop: '-40px',
+      marginLeft: spacing(0),
+      marginBottom: 10,
     },
   },
   button: {
@@ -51,20 +51,25 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     boxShadow: '0 0 1px 0 rgba(0,0,0,0.70), 0 5px 8px -2px rgba(0,0,0,0.50)',
     // boxShadow: '0 1px 2px rgba(0,0,0,0.15)',
     transition: 'box-shadow 0.3s ease-in-out',
-
     '&:hover': {
       backgroundColor: '#ffffff',
       boxShadow: '0 5px 15px rgba(0,0,0,0.3)',
     },
+    [breakpoints.down('sm')]: {
+      fontSize: 16,
+      paddingLeft: spacing(2),
+      paddingRight: spacing(1),
+      marginRight: spacing(1),
+      marginBottom: spacing(2),
+    },
   },
-  divider: {
-    width: 1,
-    height: 54,
-    position: 'absolute',
-    marginLeft: spacing(5),
-    marginTop: spacing(-1.5),
+  icon: {
+    fontSize: '30px !important',
     // marginRight: spacing(1),
-    backgroundColor: '#d4d4d4',
+    [breakpoints.down('sm')]: {
+      fontSize: '24px !important',
+      // marginRight: 12,
+    },
   },
 }));
 
@@ -72,6 +77,7 @@ function Contact() {
   const classes = useStyles();
   const theme = useTheme();
   const smUp = useMediaQuery(theme.breakpoints.up('md'));
+  const mdUp = useMediaQuery(theme.breakpoints.up('lg'));
   return (
     <div className={classes.root} id="contact">
       <Typography variant="h1" component="h2" align="center" color="textSecondary">
@@ -79,38 +85,37 @@ function Contact() {
       </Typography>
       <Box my="3.5rem">
         <Paper className={classes.paper} elevation={8}>
-          {smUp && (
-            <div className={classes.chipBox}>
-              <Button
-                component={Link}
-                href="mailto:soslan@tuaev.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.button}
-                startIcon={
-                  <>
-                    <MailOutlineIcon style={{ fontSize: 30, marginRight: 12 }} />
-                    <Divider className={classes.divider} />
-                  </>
-                }
-              >
-                soslan@tuaev.com
-              </Button>
-              <Button
-                component={Link}
-                href="https://www.linkedin.com/in/tuaev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.button}
-                startIcon={
-                  <>
-                    <LinkedInIcon style={{ fontSize: 30, marginRight: 12 }} />
-                    <Divider className={classes.divider} />
-                  </>
-                }
-              >
-                Soslan Tuaev
-              </Button>
+          <div className={classes.chipBox}>
+            <Button
+              component={Link}
+              href="mailto:soslan@tuaev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.button}
+              startIcon={
+                <>
+                  <MailOutlineIcon className={classes.icon} />
+                </>
+              }
+            >
+              soslan@tuaev.com
+            </Button>
+
+            <Button
+              component={Link}
+              href="https://www.linkedin.com/in/tuaev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.button}
+              startIcon={
+                <>
+                  <LinkedInIcon className={classes.icon} />
+                </>
+              }
+            >
+              Soslan Tuaev
+            </Button>
+            {mdUp && (
               <Button
                 component={Link}
                 href="/pdf/Soslan-Tuaev-CV.pdf"
@@ -119,15 +124,14 @@ function Contact() {
                 className={classes.button}
                 startIcon={
                   <>
-                    <MdPictureAsPdf style={{ fontSize: 30, marginRight: 12 }} />
-                    <Divider className={classes.divider} />
+                    <MdPictureAsPdf className={classes.icon} />
                   </>
                 }
               >
                 Resume
               </Button>
-            </div>
-          )}
+            )}
+          </div>
           <ContactForm />
         </Paper>
       </Box>
