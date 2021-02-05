@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Divider,
   Link,
   makeStyles,
   Paper,
@@ -49,7 +48,6 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     textDecoration: 'none !important',
     backgroundColor: '#ffffff',
     boxShadow: '0 0 1px 0 rgba(0,0,0,0.70), 0 5px 8px -2px rgba(0,0,0,0.50)',
-    // boxShadow: '0 1px 2px rgba(0,0,0,0.15)',
     transition: 'box-shadow 0.3s ease-in-out',
     '&:hover': {
       backgroundColor: '#ffffff',
@@ -65,10 +63,8 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   },
   icon: {
     fontSize: '30px !important',
-    // marginRight: spacing(1),
     [breakpoints.down('sm')]: {
       fontSize: '24px !important',
-      // marginRight: 12,
     },
   },
 }));
@@ -76,7 +72,6 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
 function Contact() {
   const classes = useStyles();
   const theme = useTheme();
-  const smUp = useMediaQuery(theme.breakpoints.up('md'));
   const mdUp = useMediaQuery(theme.breakpoints.up('lg'));
   return (
     <div className={classes.root} id="contact">
