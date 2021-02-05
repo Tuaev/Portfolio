@@ -33,6 +33,26 @@ const workProject = [
     image: '/static/work/ecommerce-react-min.png',
     button: 'Visit GitHub',
   },
+  {
+    id: '4',
+    title: 'UI Colour Picker',
+    description:
+      'A React palette generator and colour picker based on Flat UI Colors and Material UI Color. Created as part of Colt Steeles React Bootcamp Assigment.',
+    tags: ['React.js', 'JSS', 'Material-UI'],
+    website: 'https://ui-colour-picker.netlify.app/',
+    image: '/static/work/ui-color-picker.png',
+    button: 'Visit Website',
+  },
+  {
+    id: '5',
+    title: 'Job Listings Filter',
+    description:
+      'Fully responsive Job Listing App built on React. Filters by job level, category and language. Part of the Front-End Mentor job listing challenger',
+    tags: ['React.js', 'JavaScript', 'Tailwind CSS'],
+    website: 'https://github.com/Tuaev/Job-Listing-Filter-App',
+    image: '/static/work/job-listing-min.png',
+    button: 'Visit GitHub',
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({
