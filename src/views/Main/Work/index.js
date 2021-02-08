@@ -9,9 +9,9 @@ const workProject = [
     description:
       'A combat sports event and tournament management system. Wresmnr allows you to create and manage events easily with prebuilt Olympic Wrestling brackets.',
     tags: ['Full-Stack', 'React.js', 'Node.js'],
-    website: 'https://wresmnr.netlify.app/',
+    website: [{ link: 'https://wresmnr.netlify.app/', button: 'Live Website' }],
     image: '/static/work/wresmnr-home-min.png',
-    button: 'Visit Website',
+    button: 'Live Website',
   },
   {
     id: '2',
@@ -19,9 +19,9 @@ const workProject = [
     description:
       'The official website of the Irish Amateur Wrestling Association. A Full-Stack application to manage membership, tournaments and events with secure payments.',
     tags: ['Node.js', 'MongoDB', 'Express'],
-    website: 'https://www.irishwrestling.ie/',
+    website: [{ link: 'https://www.irishwrestling.ie/', button: 'Live Website' }],
     image: '/static/work/wrestling-admin-min.png',
-    button: 'Visit Website',
+    button: 'Live Website',
   },
   {
     id: '3',
@@ -29,9 +29,9 @@ const workProject = [
     description:
       'My first Full-Stack application using the MERN stack. A complete e-commerce website with order management and secure PayPal payment system. Complete with Admin panel.',
     tags: ['MERN Stack', 'React.js', 'Node.js'],
-    website: 'https://github.com/Tuaev/E-commerce-MERN',
+    website: [{ link: 'https://github.com/Tuaev/E-commerce-MERN', button: 'GitHub' }],
     image: '/static/work/ecommerce-react-min.png',
-    button: 'Visit GitHub',
+    button: 'GitHub',
   },
   {
     id: '4',
@@ -39,9 +39,12 @@ const workProject = [
     description:
       'A React palette generator and colour picker based on Flat UI Colors and Material UI Color. Created as part of Colt Steeles React Bootcamp Assigment.',
     tags: ['React.js', 'JSS', 'Material-UI'],
-    website: 'https://ui-colour-picker.netlify.app/',
+    website: [
+      { link: 'https://ui-colour-picker.netlify.app/', button: 'Live Website' },
+      { link: 'https://github.com/Tuaev/ui-color-picker/', button: 'GitHub' },
+    ],
     image: '/static/work/ui-color-picker.png',
-    button: 'Visit Website',
+    button: 'Live Website',
   },
   {
     id: '5',
@@ -49,9 +52,11 @@ const workProject = [
     description:
       'Fully responsive Job Listing App built on React. Filters by job level, category and language. Part of the Front-End Mentor job listing challenger',
     tags: ['React.js', 'JavaScript', 'Tailwind CSS'],
-    website: 'https://github.com/Tuaev/Job-Listing-Filter-App',
+    website: [
+      { link: 'https://job-listing-appjs.netlify.app/', button: 'Live Website' },
+      { link: 'https://github.com/Tuaev/Job-Listing-Filter-App', button: 'GitHub' },
+    ],
     image: '/static/work/job-listing-min.png',
-    button: 'Visit GitHub',
   },
 ];
 

@@ -24,6 +24,9 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     // alignItems: 'center',
     paddingBottom: spacing(2),
     marginBottom: spacing(8),
+    '& div': {
+      background: 'red',
+    },
   },
   media: {
     zIndex: '1',
@@ -60,8 +63,9 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     textTransform: 'initial',
   },
   cardActions: {
+    paddingRight: spacing(3),
     paddingTop: 0,
-    width: '88%',
+    // width: '88%',
     justifyContent: 'flex-end',
   },
   button: {
@@ -139,18 +143,20 @@ function WorkCard({ project }) {
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Button
-          component={Link}
-          endIcon={<LaunchIcon />}
-          variant="outlined"
-          color="secondary"
-          href={project.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.button}
-        >
-          {project.button}
-        </Button>
+        {project.website.map((website) => (
+          <Button
+            component={Link}
+            endIcon={<LaunchIcon />}
+            variant="outlined"
+            color="secondary"
+            href={website.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.button}
+          >
+            {website.button}
+          </Button>
+        ))}
       </CardActions>
     </Card>
   );
