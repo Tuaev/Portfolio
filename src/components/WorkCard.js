@@ -12,8 +12,6 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
   root: {
     margin: 'auto',
     borderRadius: spacing(1), // 16px
-    // transition: '0.3s',
-    // boxShadow: '0px 14px 80px rgba(34, 35, 58, 0.2)',
     position: 'relative',
     maxWidth: 500,
     marginLeft: 'auto',
@@ -21,7 +19,6 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     background: '#ffffff',
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
     paddingBottom: spacing(2),
     marginBottom: spacing(8),
     '&:hover $media': {
@@ -72,7 +69,6 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
   cardActions: {
     paddingRight: spacing(3),
     paddingTop: 0,
-    // width: '88%',
     justifyContent: 'flex-end',
   },
   button: {
@@ -84,7 +80,6 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     marginTop: '-12px',
     marginLeft: spacing(4),
     [breakpoints.down('md')]: {
-      // fontSize: 14,
       marginLeft: spacing(5),
     },
   },
@@ -103,7 +98,6 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     display: 'inline-block',
     fontSize: 16,
     [breakpoints.down('md')]: {
-      // fontSize: 14,
       marginLeft: 0,
       marginRight: spacing(0.5),
       paddingTop: spacing(0.3),
