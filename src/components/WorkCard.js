@@ -12,7 +12,7 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
   root: {
     margin: 'auto',
     borderRadius: spacing(1), // 16px
-    transition: '0.3s',
+    // transition: '0.3s',
     // boxShadow: '0px 14px 80px rgba(34, 35, 58, 0.2)',
     position: 'relative',
     maxWidth: 500,
@@ -24,8 +24,9 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     // alignItems: 'center',
     paddingBottom: spacing(2),
     marginBottom: spacing(8),
-    '& div': {
-      background: 'red',
+    '&:hover $media': {
+      top: '-6px',
+      boxShadow: '0 0 1px 0 rgba(0,0,0,0.70), 0 12px 22px -8px rgba(0,0,0,0.50)',
     },
   },
   media: {
@@ -40,6 +41,12 @@ const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
     backgroundColor: '#fff',
     position: 'relative',
     boxShadow: '0 0 1px 0 rgba(0,0,0,0.70), 0 6px 12px -4px rgba(0,0,0,0.50)',
+    top: 0,
+    WebkitTransition: ' 0.3s ease',
+    MozTransition: ' 0.3s ease',
+    MsTransition: ' 0.3s ease',
+    OTransition: ' 0.3s ease',
+    transition: ' 0.3s ease',
     '&:after': {
       content: '" "',
       position: 'absolute',
