@@ -14,19 +14,6 @@ const workProject = [
     button: 'Live Website',
   },
   {
-    id: '6',
-    title: 'Virtual Bank',
-    description:
-      'A virtual bank landing page that demonstrates the use of smooth-scrolling, custom CSS and styled-components in React. ',
-    tags: ['React.js', 'Styled-Components'],
-    website: [
-      { link: 'https://virtualbank7.netlify.app/', button: 'Live Website' },
-      { link: 'https://github.com/Tuaev/VirtualBank-styled-comp-layout', button: 'GitHub' },
-    ],
-    image: '/static/work/virtual-bank.jpg',
-    button: 'Live Website',
-  },
-  {
     id: '2',
     title: 'Wrestling Ireland',
     description:
@@ -45,6 +32,19 @@ const workProject = [
     website: [{ link: 'https://github.com/Tuaev/E-commerce-MERN', button: 'GitHub' }],
     image: '/static/work/ecommerce-react-min.png',
     button: 'GitHub',
+  },
+  {
+    id: '6',
+    title: 'Virtual Bank',
+    description:
+      'A virtual bank landing page that demonstrates the use of smooth-scrolling, custom CSS and styled-components in React. ',
+    tags: ['React.js', 'Styled-Components'],
+    website: [
+      { link: 'https://virtualbank7.netlify.app/', button: 'Live Website' },
+      { link: 'https://github.com/Tuaev/VirtualBank-styled-comp-layout', button: 'GitHub' },
+    ],
+    image: '/static/work/virtual-bank.jpg',
+    button: 'Live Website',
   },
   {
     id: '4',
