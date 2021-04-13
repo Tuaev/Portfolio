@@ -14,6 +14,19 @@ const workProject = [
     button: 'Live Website',
   },
   {
+    id: '6',
+    title: 'Virtual Bank',
+    description:
+      'A fake virtual bank landing page that demonstrates the use of smooth-scrolling,  styled-components in React. ',
+    tags: ['React.js', 'Styled-Components'],
+    website: [
+      { link: 'https://virtualbank7.netlify.app/', button: 'Live Website' },
+      { link: 'https://github.com/Tuaev/VirtualBank-styled-comp-layout', button: 'GitHub' },
+    ],
+    image: '/static/work/virtual-bank.jpg',
+    button: 'Live Website',
+  },
+  {
     id: '2',
     title: 'Wrestling Ireland',
     description:
@@ -76,7 +89,7 @@ function Work() {
         Work
       </Typography>
       <Box mt="6rem">
-        <Grid container spacing={3} justify="center" alignItems="center">
+        <Grid container spacing={3} justify="center">
           {workProject.map((project) => (
             <Grid item xs={12} md={6} lg={4} key={project.id}>
               <WorkCard project={project} />
