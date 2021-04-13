@@ -8,7 +8,7 @@ import { Box, CardActions, Typography, Link } from '@material-ui/core';
 import LaunchIcon from '@material-ui/icons/Launch';
 import { nanoid } from 'nanoid';
 
-const useStyles = makeStyles(({ breakpoints, spacing, palette, shadows }) => ({
+const useStyles = makeStyles(({ breakpoints, spacing, palette }) => ({
   root: {
     margin: 'auto',
     borderRadius: spacing(1), // 16px
@@ -131,12 +131,7 @@ function WorkCard({ project }) {
         ))}
       </Box>
       <CardContent className={classes.content}>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="h2"
-          style={{ fontWeight: 'bold' }}
-        >
+        <Typography gutterBottom variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
           {project.title}
         </Typography>
         <Typography variant="h6" component="p">

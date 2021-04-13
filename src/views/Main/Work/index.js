@@ -17,7 +17,7 @@ const workProject = [
     id: '6',
     title: 'Virtual Bank',
     description:
-      'A fake virtual bank landing page that demonstrates the use of smooth-scrolling,  styled-components in React. ',
+      'A virtual bank landing page that demonstrates the use of smooth-scrolling, custom CSS and styled-components in React. ',
     tags: ['React.js', 'Styled-Components'],
     website: [
       { link: 'https://virtualbank7.netlify.app/', button: 'Live Website' },
@@ -40,8 +40,8 @@ const workProject = [
     id: '3',
     title: 'React E-Commerce',
     description:
-      'My first Full-Stack application using the MERN stack. A complete e-commerce website with order management and secure PayPal payment system. Complete with Admin panel.',
-    tags: ['MERN Stack', 'React.js', 'Node.js'],
+      'A Full-Stack application using the MERN stack. A complete e-commerce website with order management and secure PayPal payment system. Complete with Admin panel.',
+    tags: ['MERN', 'Redux', 'React.js', 'Node.js'],
     website: [{ link: 'https://github.com/Tuaev/E-commerce-MERN', button: 'GitHub' }],
     image: '/static/work/ecommerce-react-min.png',
     button: 'GitHub',
