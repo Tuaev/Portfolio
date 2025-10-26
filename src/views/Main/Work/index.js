@@ -4,6 +4,16 @@ import WorkCard from 'src/components/WorkCard';
 
 const workProject = [
   {
+    id: '7',
+    title: 'Secure Top Roofing',
+    description:
+      'A professional website for a leading Irish roofing company showcasing their services, projects, and expertise in commercial and residential roofing solutions.',
+    tags: ['React.js', 'Material-UI', 'Responsive Design'],
+    website: [{ link: 'https://securetoproofing.ie/', button: 'Live Website' }],
+    image: '/static/work/Sunset-Roofer-Logo.png',
+    button: 'Live Website',
+  },
+  {
     id: '1',
     title: 'Tournament Manager',
     description:
